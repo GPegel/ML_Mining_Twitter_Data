@@ -25,5 +25,6 @@ class MyListener(StreamListener):
         print(status)
         return True
  
+# gathers all the new tweets with the #python hashtag
 twitter_stream = Stream(auth, MyListener())
 twitter_stream.filter(track=['#python'])
